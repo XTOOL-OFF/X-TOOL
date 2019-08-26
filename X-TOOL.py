@@ -1,9 +1,6 @@
 #-- coding: utf8 --
 #!/usr/bin/env python3
-import os, time, subprocess
-from pathlib import Path
-from scapy.all import *
-from contextlib import contextmanager, redirect_stdout
+import os, time
 logo = '''
             __  __          _____ ___   ___  _     
             \ \/ /         |_   _/ _ \ / _ \| |    
@@ -96,4 +93,4 @@ if query.startswith('5'):
 	os.system(MITM)
 else:
 	print('')
-	print('[X] Sorry, Something is Wrong!')
+	print('[X] Sorry, You didnt choose options!')
