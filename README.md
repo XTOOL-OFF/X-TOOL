@@ -9,7 +9,7 @@ DISCLAIMER:
  
  
  #INSTALATION
- Debian Linux (ex: Kali, etc.)
+ Debian Linux (ex: Kali, etc)
  
  git clone https://github.com/XTOOL-OFF/X-TOOL.git
  
