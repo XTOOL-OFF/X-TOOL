@@ -26,6 +26,8 @@ DISCLAIMER:
  
  Ngrok
  
+ Wifite
+ 
  Postqresql
  
  Exploit/windows/smb/ms17_010_psexec, You must download this from network and copy file in Metasploit folder/smb
