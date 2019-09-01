@@ -39,7 +39,10 @@ DISCLAIMER:
  
  cd X-TOOL
  
- Your Helper Must be smart how You!
+
  
  python3 X-TOOL.py
+ 
+ 
+  Your Helper Must be smart how You!
  
