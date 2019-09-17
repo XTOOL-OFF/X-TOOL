@@ -40,9 +40,10 @@ DISCLAIMER:
  cd X-TOOL
  
 
+python3 setup.py
  
- python3 X-TOOL.py
  
  
+ After Instalation you can start X-TOOL, easily execute xtool in to command line.
   Your Helper Must be smart how You!
  
