@@ -10,6 +10,9 @@ logo = '''
             ######################################
             # Use it for EDUCATION PURPOSES only #                        
             ######################################
+
+						Author: XERSIX
+
 '''
 print(logo)
 Interface = input('[*]Write Name of your Internet Access Interface, (Example: wlan0):')
