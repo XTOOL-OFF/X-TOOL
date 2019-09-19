@@ -103,7 +103,7 @@ if query.startswith('7'):
 	print("Welcome to SMS Mailer!")
 	print("Spoofer was writen by TheSpeedX")
 	time.sleep(5)
-	os.system("cd && cd X-TOOL && cd TBomb/ && ./TBomb.sh")
+	os.system("cd && cd X-TOOL && cd TBomb/ && chmod +x * && ./TBomb.sh")
 	print("Messages Sended!")
 else:
 	print('')
