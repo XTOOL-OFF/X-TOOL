@@ -101,12 +101,9 @@ if query.startswith('6'):
 	os.system(Cracking)
 if query.startswith('7'):
 	print("Welcome to SMS Mailer!")
-	print("This working only on Termux, Nethunter, Andrax (Android Linux Terminal)")
-	number = input("Enter Victim Number:")
-	times = input("Write, how many times you want send SMS:")
-	text = input("Write message text:")
-	sms = ("for i in {1..") + (times) + ("}; do ") + ("termux-sms-send -n ") + (number) + (" ") + (text) + ("; done")
-	os.system(sms)
+	print("Spoofer was writen by TheSpeedX")
+	time.sleep(5)
+	os.system("cd ~ && cd X-TOOL && cd TBomb/ && ./TBomb.sh")
 	print("Messages Sended!")
 else:
 	print('')
