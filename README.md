@@ -5,11 +5,10 @@ DISCLAIMER:
 
   #X-TOOL is Tool for lazy White Hat Hackers
  
- 
+ Support: Termux, Kali Net Hunter, Kali Linux and etc.
  
  
  #INSTALATION
- Debian Linux (ex: Kali, etc)
  
  git clone https://github.com/XTOOL-OFF/X-TOOL.git
  
