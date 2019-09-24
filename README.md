@@ -13,6 +13,11 @@ Python3
 Python2
 
 
+Metasploit
+
+
+Ngrok
+
 
 
 INSTALLATION:
