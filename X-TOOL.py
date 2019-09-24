@@ -37,6 +37,8 @@ print('[7] Crack Wifi network password!')
 print('[8] SMS Mass Mailer')
 print('[9] QIWI Check Balance using token')
 print('[10] QIWI Transfer money using token')
+print("[11] Check Location and information from link (seeker)")
+
 print('')
 query = input("[*] Choose exploit!:")
 if query in ["1"]:
@@ -127,6 +129,13 @@ if query in ["9"]:
 	os.system('cd && cd X-TOOL && python3 QiwiBalance.py')
 if query in ["10"]:
 	os.system('cd && cd X-TOOL && python3 QiwiBablo.py')
+
+if query in ["11"]:
+	print("Starting Seeker!")
+	print("Start Ngrok in another Terminal(ngrok http 8080)")
+	os.system("cd && cd X-TOOL && cd seeker && python3 seeker.py -t manual")
+
+
 else:
 	print('')
 	print('[X] Sorry, You didnt choose options!')
