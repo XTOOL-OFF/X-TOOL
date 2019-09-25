@@ -1,0 +1,48 @@
+Latitude: 58.0033
+Longitude: 56.2478
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+Altitude: 0
+Accuracy: 1000
+Speed: NaN
+Heading: NaN
+Platform: Linux x86_64
+Cores: 2
+Memory: undefined
+Screen Height: 768
+Screen Width: 1366
+Latitude: 58.0033
+Longitude: 56.2478
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+Altitude: 0
+Accuracy: 1000
+Speed: NaN
+Heading: NaN
+Platform: Linux x86_64
+Cores: 2
+Memory: undefined
+Screen Height: 768
+Screen Width: 1366
+Latitude: 58.0033
+Longitude: 56.2478
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+Altitude: 0
+Accuracy: 1000
+Speed: NaN
+Heading: NaN
+Platform: Linux x86_64
+Cores: 2
+Memory: undefined
+Screen Height: 768
+Screen Width: 1366
+Latitude: 58.0033
+Longitude: 56.2478
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+Altitude: 0
+Accuracy: 1000
+Speed: NaN
+Heading: NaN
+Platform: Linux x86_64
+Cores: 2
+Memory: undefined
+Screen Height: 768
+Screen Width: 1366

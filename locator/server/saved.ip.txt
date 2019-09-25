@@ -1,0 +1,7 @@
+IP: 46.147.18.227
+ User-Agent: Mozilla/5.0 (Linux; Android 7.0; BV6000S_RU) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36IP: 85.140.76.30
+ User-Agent: Mozilla/5.0 (Linux; Android 7.0; BV6000S_RU) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36IP: 46.147.18.227
+ User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0IP: 46.147.18.227
+ User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0IP: 46.147.18.227
+ User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0IP: 46.147.18.227
+ User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
