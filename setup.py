@@ -38,7 +38,7 @@ if query.startswith('ACCEPT'):
 		os.system("git clone https://github.com/thewhiteh4t/seeker.git")
 		os.system("cd && cd X-TOOL && cd seeker && chmod 777 termux_install.sh && ./termux_install.sh")
 		os.system("cd seeker && chmod 777 install.sh && ./install.sh")
-		os.system("git clone https://github.com/thelinuxchoice/locator")
+#		os.system("git clone https://github.com/thelinuxchoice/locator")
 
 		os.system("echo 'alias xtool=\"cd ~ && cd X-TOOL && python3 X-TOOL.py\"' >> ~/.bashrc")
 		print("You can start X-TOOL if you execute command xtool")
