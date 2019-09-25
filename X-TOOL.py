@@ -136,6 +136,9 @@ if query in ["11"]:
 	os.system("cd && cd X-TOOL && cd seeker && python3 seeker.py -t manual")
 if query in ["12"]:
 	print("Use 01")
+	print("Open Another Terminal and start Ngrok (ngrok http 55333)")
+	print("Send Link from Ngrok Terminal to target")
+	time.sleep(5)	
 	os.system("cd && cd X-TOOL && cd locator && bash locator.sh")
 
 else:
