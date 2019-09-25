@@ -34,7 +34,7 @@ print('[4] Windows Meterpreter Over Wan')
 print("[5] Android Meterpeter Over Wan")
 print('[6] MITM Attack (Man in the middle Attack) (Using MITMf) (PC only)')
 print('[7] Crack Wifi network password!')
-print('[8] SMS Mass Mailer')
+print('[8] SMS BOMBER')
 print('[9] QIWI Check Balance using token')
 print('[10] QIWI Transfer money using token')
 print("[11] Check Location and information from link (seeker)(Blocked in Russia)")
@@ -135,8 +135,8 @@ if query in ["11"]:
 	print("Start Ngrok in another Terminal(ngrok http 8080)")
 	os.system("cd && cd X-TOOL && cd seeker && python3 seeker.py -t manual")
 if query in ["12"]:
-	print("Start Ngrok in another window (ngrok http 3333)")
-	os.system("cd && cd X-TOOL && bash locator.sh")
+	print("Use 01")
+	os.system("cd && cd X-TOOL && cd locator && bash locator.sh")
 
 else:
 	print('')
