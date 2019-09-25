@@ -135,6 +135,7 @@ if query in ["11"]:
 	print("Start Ngrok in another Terminal(ngrok http 8080)")
 	os.system("cd && cd X-TOOL && cd seeker && python3 seeker.py -t manual")
 if query in ["12"]:
+	print("Start Ngrok in another window (ngrok http 3333)")
 	os.system("cd && cd X-TOOL && cd locator && bash locator.sh")
 
 else:
