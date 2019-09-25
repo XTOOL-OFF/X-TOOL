@@ -29,7 +29,9 @@ if query.startswith('ACCEPT'):
 	if Install1.startswith("y"):
 		os.system("apt install aircrack-ng")
 		os.system("apt-get install postgresql")
+		os.system("apt-get install apache2")
 		os.system("pip install SimpleQIWI")
+		os.system("pkg install apache2")
 		os.system("git clone https://github.com/TheSpeedX/TBomb.git")
 		os.system("cd && cd X-TOOL && cd TBomb/ && chmod +x *")
 #		os.system("git clone https://github.com/byt3bl33d3r/MITMf.git")
@@ -38,8 +40,6 @@ if query.startswith('ACCEPT'):
 		os.system("git clone https://github.com/thewhiteh4t/seeker.git")
 		os.system("cd && cd X-TOOL && cd seeker && chmod 777 termux_install.sh && ./termux_install.sh")
 		os.system("cd seeker && chmod 777 install.sh && ./install.sh")
-		os.system("git clone https://github.com/thelinuxchoice/locator")
-
 		os.system("echo 'alias xtool=\"cd ~ && cd X-TOOL && python3 X-TOOL.py\"' >> ~/.bashrc")
 		print("You can start X-TOOL if you execute command xtool")
 
