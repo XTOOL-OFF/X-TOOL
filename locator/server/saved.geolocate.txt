@@ -46,3 +46,27 @@ Cores: 2
 Memory: undefined
 Screen Height: 768
 Screen Width: 1366
+Latitude: 58.0355572
+Longitude: 56.1334112
+User-Agent: Mozilla/5.0 (Linux; Android 7.0; BV6000S_RU) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36
+Altitude: null
+Accuracy: 28.163999557495117
+Speed: null
+Heading: null
+Platform: Linux armv8l
+Cores: 4
+Memory: 2
+Screen Height: 640
+Screen Width: 360
+Latitude: 58.0355635
+Longitude: 56.1334409
+User-Agent: Mozilla/5.0 (Linux; Android 7.0; BV6000S_RU) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36
+Altitude: 114.5999984741211
+Accuracy: 25.749000549316406
+Speed: null
+Heading: null
+Platform: Linux armv8l
+Cores: 4
+Memory: 2
+Screen Height: 640
+Screen Width: 360
