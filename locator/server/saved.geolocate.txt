@@ -70,3 +70,15 @@ Cores: 4
 Memory: 2
 Screen Height: 640
 Screen Width: 360
+Latitude: 58.0017814
+Longitude: 56.2618775
+User-Agent: Mozilla/5.0 (Linux; Android 9; STF-L09 Build/HUAWEISTF-L09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36 YaApp_Android/9.05 YaSearchBrowser/9.05
+Altitude: 186.40000915527344
+Accuracy: 30.792999267578125
+Speed: null
+Heading: null
+Platform: Linux armv8l
+Cores: 8
+Memory: 4
+Screen Height: 640
+Screen Width: 360
