@@ -40,7 +40,13 @@ python3 setup.py
 
 
 
+After Installation finished, Restart your Terminal.
+
+
+
+
 Using:
+
 
 
 Execute command "xtool"
