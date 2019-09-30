@@ -40,6 +40,7 @@ python3 setup.py
 
 
 
+
 After Installation finished, Restart your Terminal.
 
 
@@ -54,3 +55,81 @@ Execute command "xtool"
 
 
 For Start X-TOOL with Russian Language excute command "xtoolru"
+
+
+
+Functions:
+
+
+Eternal Blue
+
+Eternal Blue Win10
+
+
+
+Deauth WiFi network
+
+
+
+
+Windows Meterpreter Over Wan
+
+
+
+Android Meterpeter Over Wan
+
+
+
+
+
+MITM Attack
+
+
+
+Crack Wifi network password
+
+
+
+
+
+SMS BOMBER
+
+
+
+
+
+QIWI Check Balance using token
+
+
+
+QIWI Transfer money using token
+
+
+
+
+Check Location and information from link (seeker)
+
+
+
+
+Check Location and info from link (locator)
+
+
+
+
+Evil Winrar CVE
+
+
+
+
+Make Password Zipped file
+
+
+
+
+Make Password Zipped file with Meterpreter Backdoor
+
+
+
+
+Wifiphisher by sophron (Wifi Attack)(Second Network Atack)
