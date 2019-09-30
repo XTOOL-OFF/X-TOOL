@@ -45,8 +45,12 @@ After Installation finished, Restart your Terminal.
 
 
 
-Using:
+Usage:
 
 
 
 Execute command "xtool"
+
+
+
+For Start X-TOOL with Russian Language excute command "xtoolru"
