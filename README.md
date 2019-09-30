@@ -3,7 +3,7 @@ X-TOOL is Tool for lazy White Hat Hackers
 
 
 
-REQUIREMENTS:
+	REQUIREMENTS:
 
 
 Python3
@@ -20,7 +20,7 @@ Ngrok
 
 
 
-INSTALLATION:
+	INSTALLATION:
 
 
 
@@ -46,7 +46,7 @@ After Installation finished, Restart your Terminal.
 
 
 
-Usage:
+	Usage:
 
 
 
@@ -58,7 +58,7 @@ For Start X-TOOL with Russian Language excute command "xtoolru"
 
 
 
-Functions:
+	Functions:
 
 
 Eternal Blue
