@@ -45,7 +45,9 @@ if query.startswith('ACCEPT'):
 		os.system("cd && cd X-TOOL && chmod +x *")
 		os.system("cd && cd X-TOOL && pip3 install -r requirements.txt")
 		os.system("cd seeker && chmod 777 install.sh && ./install.sh")
+		os.system("echo 'alias xtoolru=\"cd ~ && cd X-TOOL && python3 X-TOOL_ru.py\"' >> ~/.bashrc")
+
 		os.system("echo 'alias xtool=\"cd ~ && cd X-TOOL && python3 X-TOOL.py\"' >> ~/.bashrc")
-		print("You can start X-TOOL if you execute command xtool")
+		print("You can start X-TOOL if you execute command xtool or xtoolru, if you want to use X-Tool on Russian Langauge")
 
 	
