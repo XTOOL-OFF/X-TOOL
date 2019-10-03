@@ -138,4 +138,4 @@ Wifiphisher by sophron (Wifi Attack)(Second Network Atack)
 
 
 
-HiddenEye (Social Engineering)(Fake Webpages for steep Passwords)
+HiddenEye (Social Engineering)(Fake Webpages for steal Passwords)
