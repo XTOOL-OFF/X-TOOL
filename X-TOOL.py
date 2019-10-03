@@ -29,11 +29,11 @@ print('')
 print('[*] X-TOOL Exploits:')
 print('[1] Eternal Blue')
 print('[2] Eternal Blue Win10')
-print('[3] Deauth WiFi network')                                             #Exploits
+print('[3] Deauth WiFi network (ROOT only)')                                             #Exploits
 print('[4] Windows Meterpreter Over Wan')
 print("[5] Android Meterpeter Over Wan")
-print('[6] MITM Attack (Man in the middle Attack) (Using MITMf) (PC only)')
-print('[7] Crack Wifi network password!')
+print('[6] MITM Attack (Man in the middle Attack) (Using MITMf) (PC only)(ROOT only)')
+print('[7] Crack Wifi network password!(ROOT only)')
 print('[8] SMS BOMBER')
 print('[9] QIWI Check Balance using token')
 print('[10] QIWI Transfer money using token')
@@ -42,7 +42,8 @@ print("[12] Check Location and info from link (locator)(Working in Russia)")
 print("[13] Evil Winrar CVE")
 print("[14] Make Password Zipped file")
 print("[15] Make Password Zipped file with Meterpreter Backdoor")
-print("[16] Wifiphisher by sophron (Wifi Attack)(Second Network Atack)")
+print("[16] Wifiphisher by sophron (Wifi Attack)(Second Network Atack)(ROOT only)")
+print("[17] Hidden Eye (Phishing Webpages)(ROOT only)")
 print('')
 query = input("[*] Choose exploit!:")
 if query in ["1"]:
@@ -205,6 +206,10 @@ if query in ["15"]:
 if query in ["16"]:
 	print("")
 	os.system("wifiphisher")
+if query in ["17"]:
+	print("Good Luck to Steal Passwords!(DONT USE FOR ILLEGAL)")
+	time.sleep(5)
+	os.system("cd && cd X-TOOL && cd HiddenEye && ./HiddenEye")
 
 
 else:

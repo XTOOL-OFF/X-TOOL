@@ -29,11 +29,11 @@ print('')
 print('[*] X-TOOL Действия:')
 print('[1] Eternal Blue')
 print('[2] Eternal Blue Win10')
-print('[3] Деантифицировать WiFi Сеть')                                             #Exploits
+print('[3] Деантифицировать WiFi Сеть (ТОЛЬКО ROOT)')                                             #Exploits
 print('[4] Windows Meterpreter Через Ngrok')
 print("[5] Android Meterpeter Через Ngrok")
-print('[6] MITM Attack (Человек по середине) (Через MITMf) (Только на ПК)')
-print('[7] Перебор паролей WiFi сети(Через Wifite)!')
+print('[6] MITM Attack (Человек по середине) (Через MITMf) (Только на ПК) (ТОЛЬКО ROOT)')
+print('[7] Перебор паролей WiFi сети(Через Wifite)(ТОЛЬКО ROOT)!')
 print('[8] SMS Флуд')
 print('[9] QIWI Проверка баланса через токен')
 print('[10] QIWI Перевод денег через токен')
@@ -42,7 +42,8 @@ print("[12] Просмотр информации и геолокации чер
 print("[13] Злой WinRar CVE")
 print("[14] Создание Zip архива с паролем")
 print("[15] Создание Zip архива(С паролем) с Meterpreter")
-print("[16] Wifiphisher от sophron (Wifi Attack)(Злой двойник Atack)")
+print("[16] Wifiphisher от sophron (Wifi Attack)(Злой двойник Atack)(ТОЛЬКО ROOT)")
+print("[17] HiddenEye (ТОЛЬКО ROOT)")
 print('')
 query = input("[*] Выбирите действие!:")
 if query in ["1"]:
@@ -201,6 +202,9 @@ if query in ["15"]:
 if query in ["16"]:
 	print("")
 	os.system("wifiphisher")
+if query in ["17"]:
+	print("Удачи в краже паролей!(ИСПОЛЬЗУЙТЕ ТОЛЬКО ТЕСТИРОВАНИЯ!)")
+	os.system("cd && cd X-TOOL && cd HiddenEye && ./HiddenEye")
 
 
 else:

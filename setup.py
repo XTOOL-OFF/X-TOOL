@@ -48,6 +48,7 @@ if query.startswith('ACCEPT'):
 		os.system("echo 'alias xtoolru=\"cd ~ && cd X-TOOL && python3 X-TOOL_ru.py\"' >> ~/.bashrc")
 
 		os.system("echo 'alias xtool=\"cd ~ && cd X-TOOL && python3 X-TOOL.py\"' >> ~/.bashrc")
+		os.system("cd && cd X-TOOL && git clone https://github.com/DarkSecDevelopers/HiddenEye.git")
 		print("You can start X-TOOL if you execute command xtool or xtoolru, if you want to use X-Tool on Russian Langauge")
 
 	
