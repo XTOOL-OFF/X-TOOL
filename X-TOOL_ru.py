@@ -204,7 +204,7 @@ if query in ["16"]:
 	os.system("wifiphisher")
 if query in ["17"]:
 	print("Удачи в краже паролей!(ИСПОЛЬЗУЙТЕ ТОЛЬКО ТЕСТИРОВАНИЯ!)")
-	os.system("cd && cd X-TOOL && cd HiddenEye && ./HiddenEye")
+	os.system("cd && cd X-TOOL && cd HiddenEye && ./HiddenEye.py")
 
 
 else:

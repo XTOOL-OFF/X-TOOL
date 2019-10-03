@@ -209,7 +209,7 @@ if query in ["16"]:
 if query in ["17"]:
 	print("Good Luck to Steal Passwords!(DONT USE FOR ILLEGAL)")
 	time.sleep(5)
-	os.system("cd && cd X-TOOL && cd HiddenEye && ./HiddenEye")
+	os.system("cd && cd X-TOOL && cd HiddenEye && ./HiddenEye.py")
 
 
 else:
