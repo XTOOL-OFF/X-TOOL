@@ -44,6 +44,7 @@ print("[14] Make Password Zipped file")
 print("[15] Make Password Zipped file with Meterpreter Backdoor")
 print("[16] Wifiphisher by sophron (Wifi Attack)(Second Network Atack)(ROOT only)")
 print("[17] Hidden Eye (Phishing Webpages)(ROOT only)")
+print("[18] Email Message spoofer(Using html!)")
 print('')
 query = input("[*] Choose exploit!:")
 if query in ["1"]:
@@ -210,8 +211,5 @@ if query in ["17"]:
 	print("Good Luck to Steal Passwords!(DONT USE FOR ILLEGAL)")
 	time.sleep(5)
 	os.system("cd && cd X-TOOL && cd HiddenEye && chmod 777 * && ./HiddenEye.py")
-
-
-else:
-	print('')
-	print('[X] Sorry, You didnt choose options!')
+if query in ["18"]:
+	os.system("cd && cd X-TOOL && python3 htmlmailer.py")

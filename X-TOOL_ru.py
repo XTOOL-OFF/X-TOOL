@@ -44,6 +44,7 @@ print("[14] Создание Zip архива с паролем")
 print("[15] Создание Zip архива(С паролем) с Meterpreter")
 print("[16] Wifiphisher от sophron (Wifi Attack)(Злой двойник Atack)(ТОЛЬКО ROOT)")
 print("[17] HiddenEye (ТОЛЬКО ROOT)")
+print("[18] Спуфер сообщений электронной почты (используя html!)")
 print('')
 query = input("[*] Выбирите действие!:")
 if query in ["1"]:
@@ -205,8 +206,5 @@ if query in ["16"]:
 if query in ["17"]:
 	print("Удачи в краже паролей!(ИСПОЛЬЗУЙТЕ ТОЛЬКО ТЕСТИРОВАНИЯ!)")
 	os.system("cd && cd X-TOOL && cd HiddenEye && chmod 777 * && ./HiddenEye.py")
-
-
-else:
-	print('')
-	print('[X] Извините, Вы не выброли действие!')
+if query in ["18"]:
+	os.system("cd && cd X-TOOL && python3 htmlmailer_ru.py")
