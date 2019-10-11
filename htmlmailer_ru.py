@@ -1,5 +1,5 @@
 import smtplib
-
+import os, time
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
@@ -20,13 +20,13 @@ you = (VictimMail)
 me = (namemail)
 # Create message container - the correct MIME type is multipart/alternative.
 msg = MIMEMultipart('alternative')
-msg['Subject'] = "Link"
+msg['Subject'] = (Subject)
 msg['From'] = me
 msg['To'] = you
 
 # Create the body of the message (a plain-text and an HTML version).
 text = ""
-path = input("Введите путь к вашему текстовому файлу(Example: /home/html.html)!:")
+path = input("Введите название html файла(Пример: html.html)!:")
 text2 = open(path, "r").read()
 
 html = text2
