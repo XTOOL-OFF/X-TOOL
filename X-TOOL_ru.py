@@ -46,6 +46,8 @@ print("[16] Wifiphisher от sophron (Wifi Attack)(Злой двойник Atack
 print("[17] HiddenEye (ТОЛЬКО ROOT)")
 print("[18] Спуфер сообщений электронной почты (используя html!)")
 print("[19] Злой двойник wifi с html, php(ОБНОВЛЕНИЕ СКОРО)")
+print("[20] Брутфорс электронной почты")
+print("[clear] Очистка файлов паролей и логинов!")
 print('')
 query = input("[*] Выбирите действие!:")
 if query in ["1"]:
@@ -211,3 +213,7 @@ if query in ["18"]:
 	os.system("cd && cd X-TOOL && python3 htmlmailer_ru.py")
 if query in ["19"]:
 	os.system("cd && cd X-TOOL && python3 evilhost.py")
+if query in ["20"]:
+	os.system("cd && cd X-TOOL && python3 server.py")
+if query in ["clear"]:
+	os.system("cd && cd X-TOOL && rm -r -f password.txt && rm -r -f login.txt")
