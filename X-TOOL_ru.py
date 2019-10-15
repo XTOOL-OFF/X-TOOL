@@ -48,6 +48,8 @@ print("[18] Спуфер сообщений электронной почты (�
 print("[19] Злой двойник wifi с html, php(ОБНОВЛЕНИЕ СКОРО)")
 print("[20] Брутфорс электронной почты")
 print("[21] VK Брутфорс")
+print("[22] VK Получение фотографии пользователя")
+print("[23] Брутфорс Gmail Аккаунта")
 print("[clear] Очистка файлов паролей и логинов!")
 print('')
 query = input("[*] Выбирите действие!:")
@@ -220,3 +222,14 @@ if query in ["clear"]:
 	os.system("cd && cd X-TOOL && rm -r -f password.txt && rm -r -f login.txt")
 if query in ["21"]:
         os.system("cd && cd X-TOOL && python3 vk.py")
+if query in ["22"]:
+	vktargetid = input("Enter Target VK ID!:")
+	vkTester = input("Enter Your VK Phone Number!:")
+	vkPass = input("Enter Your VK Password(Using for download images)!:")
+	vkp = ("cd && cd vk-photos && vk-scraper ") + (vktargetid) + (" -u ") + (vkTester) + (" -p ") + (vkPass)
+	vki = ("Images will be stored in (/home/vk-photos/") + (vktargetid) + (")")
+	print(vki)
+	os.system(vkp)
+if query in ["23"]:
+	os.system("cd && cd X-TOOL && python2 gbrute.py")
+

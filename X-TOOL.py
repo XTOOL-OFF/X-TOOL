@@ -46,9 +46,10 @@ print("[16] Wifiphisher by sophron (Wifi Attack)(Second Network Atack)(ROOT only
 print("[17] Hidden Eye (Phishing Webpages)(ROOT only)")
 print("[18] Email Message spoofer(Using html!)")
 print("[19] Evil Access Point with html and php(Will UPDATED SOON!)")
-print("[20] Mail Bruter")
+print("[20] Mail Test login and pass")
 print("[21] VK Test login an pass")
 print("[22] VK Image-Scraper")
+print("[23] Brute Gmail Account")
 print("[clear] Clear login and password file!")
 print('')
 query = input("[*] Choose exploit!:")
@@ -234,4 +235,6 @@ if query in ["22"]:
 	vki = ("Images will be stored in (/home/vk-photos/") + (vktargetid) + (")")
 	print(vki)
 	os.system(vkp)
+if query in ["23"]:
+	os.system("cd && cd X-TOOL && python2 gbrute.py")
 
