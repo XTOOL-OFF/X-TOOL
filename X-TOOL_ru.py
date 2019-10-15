@@ -47,6 +47,7 @@ print("[17] HiddenEye (ТОЛЬКО ROOT)")
 print("[18] Спуфер сообщений электронной почты (используя html!)")
 print("[19] Злой двойник wifi с html, php(ОБНОВЛЕНИЕ СКОРО)")
 print("[20] Брутфорс электронной почты")
+print("[21] VK Брутфорс")
 print("[clear] Очистка файлов паролей и логинов!")
 print('')
 query = input("[*] Выбирите действие!:")
@@ -217,3 +218,5 @@ if query in ["20"]:
 	os.system("cd && cd X-TOOL && python3 server.py")
 if query in ["clear"]:
 	os.system("cd && cd X-TOOL && rm -r -f password.txt && rm -r -f login.txt")
+if query in ["21"]:
+        os.system("cd && cd X-TOOL && python3 vk.py")

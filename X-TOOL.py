@@ -47,6 +47,7 @@ print("[17] Hidden Eye (Phishing Webpages)(ROOT only)")
 print("[18] Email Message spoofer(Using html!)")
 print("[19] Evil Access Point with html and php(Will UPDATED SOON!)")
 print("[20] Mail Bruter")
+print("[21] VK Bruter")
 print("[clear] Clear login and password file!")
 print('')
 query = input("[*] Choose exploit!:")
@@ -222,3 +223,5 @@ if query in ["20"]:
 	os.system("cd && cd X-TOOL && python3 server.py")
 if query in ["clear"]:
 	os.system("cd && cd X-TOOL && rm -r -f password.txt && rm -r -f login.txt")
+if query in ["21"]:
+	os.system("cd && cd X-TOOL && python3 vk.py")
