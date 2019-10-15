@@ -34,6 +34,8 @@ if query.startswith('ACCEPT'):
 		os.system("pkg install apache2")
 		os.system("git clone https://github.com/TheSpeedX/TBomb.git")
 		os.system("cd && cd X-TOOL && cd TBomb/ && chmod +x *")
+		os.system("cd && mkdir vk-photos")
+		os.system("pip3 install vk-scraper --upgrade --user")
 #		os.system("git clone https://github.com/byt3bl33d3r/MITMf.git")
 #		os.system("cd && cd X-TOOL && cd MITMf && git submodule init && git submodule update --recursive")
 #		os.system("cd && cd X-TOOL && cd MITMf && pip install -r requirements.txt")

@@ -47,7 +47,8 @@ print("[17] Hidden Eye (Phishing Webpages)(ROOT only)")
 print("[18] Email Message spoofer(Using html!)")
 print("[19] Evil Access Point with html and php(Will UPDATED SOON!)")
 print("[20] Mail Bruter")
-print("[21] VK Bruter")
+print("[21] VK Test login an pass")
+print("[22] VK Image-Scraper")
 print("[clear] Clear login and password file!")
 print('')
 query = input("[*] Choose exploit!:")
@@ -225,3 +226,12 @@ if query in ["clear"]:
 	os.system("cd && cd X-TOOL && rm -r -f password.txt && rm -r -f login.txt")
 if query in ["21"]:
 	os.system("cd && cd X-TOOL && python3 vk.py")
+if query in ["22"]:
+	vktargetid = input("Enter Target VK ID!:")
+	vkTester = input("Enter Your VK Phone Number!:")
+	vkPass = input("Enter Your VK Password(Using for download images)!:")
+	vkp = ("cd && cd vk-photos && vk-scraper ") + (vktargetid) + (" -u ") + (vkTester) + (" -p ") + (vkPass)
+	vki = ("Images will be stored in (/home/vk-photos/") + (vktargetid) + (")")
+	print(vki)
+	os.system(vkp)
+
