@@ -153,9 +153,13 @@ Evil Access Point with html and php
 
 
 
-Brute email account using fake webpage!
+Test Gmail account using fake webpage!
  Unsecure apps must be enable!
+ 
 
 
 
-VK BruteForce
+VK Test Password
+
+
+Brute Force Gmail Account (Less Secure Apps must be enabled!)
